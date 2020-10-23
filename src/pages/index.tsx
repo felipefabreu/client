@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import styles from '../../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../../styles/Home.module.css';
 
-type Props ={
-  title: string
-}
+type Props = {
+  title: string;
+};
 
-export default function Home({title = 'Felipe'}:Props) {
+export default function Home({ title = 'Felipe' }: Props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,9 +14,7 @@ export default function Home({title = 'Felipe'}:Props) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Hello world - {title}
-        </h1>
+        <h1 className={styles.title}>Hello world - {title}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -65,5 +63,5 @@ export default function Home({title = 'Felipe'}:Props) {
         </a>
       </footer>
     </div>
-  )
+  );
 }
